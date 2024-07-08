@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-family: "Montserrat", sans-serif;
+    @apply font-semibold;
+}
+
+.input-bordered,
+.select-bordered,
+.file-input-bordered,
+.textarea-bordered {
+    @apply bg-base-100 border-2 border-base-300;
+}
+
+.input-error,
+.select-error,
+.file-input-error,
+.textarea-error {
+    @apply border-2 border-error;
+}
+
+.card {
+    @apply bg-white border-base-300;
+}
+
+.page-wrapper {
+    @apply container w-full max-w-6xl p-6 mx-auto space-y-6;
+}
+
+.table-wrapper {
+    @apply overflow-x-auto rounded-lg shadow-lg;
+}
+
+thead {
+    @apply bg-white;
+}
+
+.modal-box {
+    @apply scrollbar-hide;
+}
+
+.navbar-center > a > img {
+    @apply fill-amber-900;
+}
